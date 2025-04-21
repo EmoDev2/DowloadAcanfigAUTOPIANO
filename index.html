@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acanfig AUTO PIANO</title>
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versiones Disponibles</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -39,10 +45,14 @@
             border: 1px solid #ccc;
             padding: 10px;
             display: flex;
-            align-items: center;
+            flex-direction: column; /* Cambia a disposición en columnas */
             font-size: 0.8rem;
             color: #333;
             margin: 10px 0;
+        }
+
+        .version-box div, .version-box span {
+            margin-bottom: 10px; /* Añade espacio entre los elementos */
         }
 
         .beta-box {
@@ -100,6 +110,32 @@
             color: #2c3e50;
         }
     </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Versiones Disponibles</h1>
+    </header>
+    <p class="available-version"><strong>Available Version:</strong></p>
+    <div class="version-box">
+        <span>
+            <a href="AcanfigAutoPiano_Win_Setup_2.0.1.exe" download>
+                Acanfig AUTO PIANO v2.1.exe
+            </a>
+        </span>
+        <div class="Realase-box">New Release</div>
+        <br>
+        <span>
+            <a href="Acanfig_AUTO_PIANO_v1.1.exe" download>
+                Download Acanfig AutoPiano V1.1
+            </a>
+        </span>
+        <div class="beta-box">BETA</div>
+        <div class="Realase-box">New Release</div>
+    </div>
+</body>
+</html>
+
 </head>
 <body>
     <header>
